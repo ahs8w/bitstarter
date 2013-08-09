@@ -40,7 +40,11 @@ ssh awshost1
 
 // SCP/Rsync //
 
-scp hello.txt awshost1:~/         # copy from local to remote home directory
-rsync -avp text.txt awshost1:~/   # same as above w/ rsync(copying/creating directories)
-scp awshost1:~/foo.txt .          # copy from remote to current local directory
-scp awshost1:~/foo.txt cc/a.b     # copy foo.txt from remote to local directory cc, renaming it a.b
+scp hello.txt awshost1:~/         
+  # copy from local to remote home directory
+rsync -avp text.txt awshost1:~/   
+  # same as above w/ rsync(copying/creating directories)
+scp awshost1:~/foo.txt .          
+  # copy from remote to current local directory
+scp awshost1:~/foo.txt cc/a.b     
+  # copy foo.txt from remote to local directory cc, renaming it a.b
